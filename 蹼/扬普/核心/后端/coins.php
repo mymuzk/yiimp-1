@@ -128,7 +128,7 @@ function BackendCoinsUpdate()
             $template = $remote->getblocktemplate('{"rules": ["mweb", "segwit"]}');
         } else if ($coin->usesegwit && $coin->symbol != 'LTC') {
             $template = $remote->getblocktemplate('{"rules": ["segwit"]}');
-        }else {
+        } else {
             $template = $remote->getblocktemplate('{}');
         }
         // Change for segwit end
