@@ -302,6 +302,8 @@ if ($DCR || $DGB) $account = '*';
 
 else if ($ETH) $account = $coin->master_wallet;
 
+else if ($coin->symbol2 == "LTC" || $coin->symbol == "LTC") $account = '*';
+
 else if ($coin->symbol == "RNG") $account = '*';
 
 else if ($coin->symbol == "ZENX") $account = '*';
